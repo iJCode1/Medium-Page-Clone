@@ -22,6 +22,7 @@ body{
 header  p:first-child{
   line-height: 24px;
   margin: 0;
+  margin-block-end: 16px;
   text-transform: uppercase;
 }
 
@@ -95,6 +96,10 @@ details summary{
   margin: 0 auto;
 }
 
+main{
+  margin-block-end: 50px;
+}
+
 .main hr{
   margin: 64px 0;
 }
@@ -154,7 +159,9 @@ details summary{
 }
 
 .section-content pre{
-  background: #FEC62E;
+  background: white;
+  border: 8px solid #5551FF;
+  box-shadow: -10px 10px 0 0 #ABAAF6;
   font-family: "Nunito", sans-serif;
   font-size: 1.6rem;
   overflow: scroll;
@@ -166,7 +173,7 @@ details summary{
 }
 
 .section-content blockquote{
-  border-left: 4px solid var(--gray30);
+  border-left: 4px solid #5551FF;
   margin: 32px 0 64px;
   padding-left: 16px;
 }
@@ -199,4 +206,10 @@ blockquote p:last-of-type::before{
       font-size: 4rem;
     }
 
+}
+
+@media screen and (max-width: 850px){
+  .hero{
+    height: 150px;
+  }
 }
