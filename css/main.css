@@ -217,6 +217,10 @@ blockquote p:last-of-type::before{
   width: 120px;
 }
 
+.videos-content{
+  padding-inline: 20px;
+}
+
 .videos-content p{
   font-size: 3rem;
 }
@@ -304,5 +308,31 @@ footer img:hover{
 @media screen and (max-width: 850px){
   .hero{
     height: 150px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .newsletter-content{
+    inline-size: 90%;
+    margin: 0 auto;
+  }
+
+  .newsletter-content form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .newsletter-content form input{
+    inline-size: 100%;
+    margin: 0 auto;
+    margin-block: 10px;
+    /* margin-inline-start: 20px;
+    margin-inline-end: 20px; */
+  }
+
+  .newsletter-content form input[type="submit"]{
+    inline-size: 100%;
+    margin: 0 auto;
+    margin-block: 10px;
   }
 }
